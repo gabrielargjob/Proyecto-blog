@@ -1,0 +1,35 @@
+$color: #fff
+$font-size: 12px
+
+@mixin display($display, $justify, $align)
+  display: $display
+  justify-content: $justify
+  align-items: $align
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px
+
+header
+  @include display($display:flex , $justify: space-between , $align: center)
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  padding: 40px 100px
+  z-index: 1000
+
+.logo
+  color: white
+  text-transform: uppercase
+  cursor: pointer
+
+.menu-nav
+
+
+
